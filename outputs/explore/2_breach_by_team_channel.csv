@@ -1,0 +1,21 @@
+assigned_team,channel,breach_rate,breach_count,total
+Billing,chat,27.4,353,1289
+Billing,email,12.8,84,657
+Billing,social,8.4,21,250
+Billing,voice,8.3,19,229
+Chat Frontline,chat,7.2,181,2500
+Chat Frontline,social,8.5,45,530
+Email Frontline,email,11.0,198,1807
+Escalations & Warranty,chat,5.2,12,231
+Escalations & Warranty,email,14.5,24,166
+Escalations & Warranty,social,7.0,3,43
+Escalations & Warranty,voice,4.7,4,85
+Logistics,chat,10.4,84,805
+Logistics,email,12.2,71,581
+Logistics,social,8.3,17,206
+Logistics,voice,3.8,12,313
+Returns Desk,chat,9.9,46,465
+Returns Desk,email,16.1,51,316
+Returns Desk,social,3.2,3,93
+Returns Desk,voice,7.4,13,175
+Voice Frontline,voice,5.7,51,900

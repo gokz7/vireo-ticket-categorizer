@@ -1,0 +1,288 @@
+﻿ticket_id,channel,customer_message,agent_notes,human_label
+TK-251138,chat,"Product: the strata 3
+Order: VR903271
+Purchased: 24/02
+Issue: refund not received yet
+Tried: emailed twice
+Expected: replacement","cx: refund pending | chk reverse pickup qc status -> refund approved, rs 6999, 5-7 working days",REFUND_STATUS
+TK-241245,chat,app crashes when i open device settings,"Cleared cache, rslvd. Issue: app crash on device page. Known issue on Android 15 - bug logged. //SNE",APP_FIRMWARE
+TK-252147,chat,"To the Vireo Customer Care Team,
+
+I am writing with reference to my order of my Pulse 2 (VR906843) placed on March 24. You picked up the item 7 days ago and my money hasn't come back. I have emailed twice. I request you to provide a resolution within 3 working days.
+
+Sincerely,
+Anjali Mittal","1. Refund not credited
+2. Checked reverse pkp QC status
+3. Refund of Rs 2974 initiated to source (SOP 5.4) [closed]",REFUND_STATUS
+TK-246425,email,"works for music but useless for meetings
+VR896558",cx says mic issue. checked mic permissions on phone. replacement raised. closing.,AUDIO_QUALITY
+TK-250318,chat,"Very poor quality. I bouht Orbit Mini on 14 Feb. paid via UPI, amount deducted, no order confirmation. I already checekd bank statement. I want a replacement or refund, nothign else.",ord manually created. issue: amount deducted without ord. checked pg dashboard for txn. ~Megha,PAYMENT_FAILED_OR_DEBITED
+TK-249270,chat,"namaste, this is regarding my pulse 2. my phone just doesn't see it in the list anymore. i restarted the phone. need this sorted this week. thank you lakshmi khanna","cx: device not discoverable | asked cx to reset the device -> advised fw update via app, rslvd | xfer billing //HAR",CONNECTIVITY
+TK-250581,voice,[IVR transcript] hey lockked out of my own account since in june ??,"re: unable to log in | checked otp logs -> number updated, resolved",ACCOUNT_LOGIN
+TK-242652,chat,"Dear Sir/Madam, This is regarding the Nexa 2. Package not delivered even after 12 days. Waiting for your reply. Thank you",re: delivery delayed | checked awb with courier -> refund initiated as lost in transit,DELIVERY_NOT_RECEIVED
+TK-246763,chat,"I haven't received my order
+VR891655
+can someone fix this?",Contact re ord not delivered. Checked AWB with courier. Refund initiated as lost in transit. Follow-up not required.,DELIVERY_NOT_RECEIVED
+TK-251601,email,audio keeps disconnecting every few minutes - VR905701 - pls resolve asap,"cx reached out - intermittent disconnects. checked fw 1.5.4. replacement approved, reverse pickup arranged. closing.",CONNECTIVITY
+TK-243874,chat,"Namaste, Got Pulse 2 from vireo.in 2 weeks ago. Battery drains very fast, barely lasts 2 hours. I updated the app. Please call me on my registered number. Thanks & regards, Lakshmi","Reported: battery draining fast. Checked usage pattern w/ cx. Refund approved, Rs 446, 5-7 working days. Follow-up not required. (SOP 4.2) -VG",CHARGING_BATTERY
+TK-248586,chat,Not what I expected from Vireo. Got my Strata 3 headphones from Amazon 3 weeks back. cannot pair my Strata 3 headphones with my laptop. I already tried on another phone. Fix this or I am posting on twitter.,"Reset done, paired ok. Issue: pairing failure. Checked phone OS version. ~Ritika",CONNECTIVITY
+TK-252241,chat,"please cancel, ordered by mistake
+VR908064",cust contacted re cancel order. chk shipment status. refunded rs 5524.,OTHER
+TK-240428,chat,i was charged twice for one order,Duplicate refunded to source. Issue: duplicate payment. Checked PG for duplicate txn.,DUPLICATE_CHARGE
+TK-245989,email,"hii
+the box says my orbit but what's inside is not what i pid for
+hello??","1. Wrong item delivered
+2. Raised with warehouse
+3. New unit shipped under DOA [closed]",DAMAGED_OR_WRONG_ITEM
+TK-243048,email,"hey
+i haven't received my order
+anyone there","cx: order not delivered | checked awb with courier -> courier confirmed delivery for 22 jun, cx informed",DELIVERY_NOT_RECEIVED
+TK-252169,email,"To the Vireo Customer Care Team,
+
+I am writing with reference to my order of USB-C cable placed on 09/04. Want to cancel my order. I have tried cancel button, greyed out. I request you to look into this matter at the earliest.
+
+Regards,
+Aarav Mukherjee","rfnd approved, Rs 379, 5-7 working days. Issue: cancel order. Checked shipment status. (SOP 5.4)",CANCELLATION
+TK-245358,email,"PRODUCT: STRATA 2
+PURCHASED: 15-09-2025
+ISSUE: TWO ENTRIES OF RS 2499 ON MY STATEMENT FOR ONE PAIR OF EARBUDS
+TRIED: CHECKED WITH BANK
+EXPECTED: CALLBACK",ticket raised for dupllicate payment. checked pg for duplicate txn. rfnd of rs 3999 initiated to source. cx informed.,DUPLICATE_CHARGE
+TK-245054,chat,"the login code never arrives, tried 6 times","OTP resent, cx logged in. Issue: unable to log in. Checked OTP logs.",ACCOUNT_LOGIN
+TK-247934,email,"hi
+the courier marked it delivered but nobody in my house got anything","Reported: shipment not received. Confirmed address with cx. Courier confirmed dlvry for 06 Dec, cx informed. Follow-up not required. (SOP 5.4) ~Imran",DELIVERY_NOT_RECEIVED
+TK-249580,chat,"Hi there,
+Bought the Nexa 2 around 22 Jan from vireo.in. Order not delivered, tracking not updating.
+Please advise.","issue: delivery delayed | raised ticket with crr partner -> rto conf, reshipped [closed]",DELIVERY_NOT_RECEIVED
+TK-249505,email,really frustrating. this is regarding airlite earbuds. cannot pair airlite earbuds with my laptop. i already tied on another phone. fix this or i am posting on twitter.,"reported: device not discoverable. asked cx to reset the device. reset done, paired ok. cx satisfied on chat.",CONNECTIVITY
+TK-247285,chat,"Dear Sir/Madam,
+
+I am writing with reference to my order of my Nexa 2 watch placed on 20 Oct. Where is the money for the return. I HAVE CHECKED BANK. I request you to process a refund to my original payment method.
+
+Sincerely,
+Vikram Joshi",re: refund not credited | checked reverse pickup qc status -> refund of rs 1950 initiated to source ~Pranav,REFUND_STATUS
+TK-242686,email,"bhai
+after the update prompt it went dark and never came back
+airlite eabruds
+urgent",customer reached out - fw update failed. chk fw 1.5.7 rollout. update completed after retry. case closed with cx consent.,APP_FIRMWARE
+TK-243880,chat,"Bought my Pulse around August 01 from vireo.in.  MY SON ORDERED THIS WITHOUT ASKING, PLEASE REVERSE.
+I TRIED CANCEL BUTTON, GREYED OUT.
+PLEASE HELP.
+THANKS IN ADVANCE ISHAAN QURESHI",ord cancellation | checked shipment status -> full rfnd processed (2374),CANCELLATION
+TK-245122,chat,"nobody came for the pickup
+please resolve asap","picukp missed | checekd pickkup awb -> pickup done, rfnd initiated",RETURN_PICKUP
+TK-247975,email,"Product: my Nexa Fit band
+Order: VR892648
+Purchased: 06-12-2025
+Issue: please cancel, ordered by mistake
+Tried: tried cancel button, greyed out
+Expected: refund","ticket raised for cancellation request. cancelled before dispatch. already shipped, adv rto/return. closing.",CANCELLATION
+TK-246310,email,got a different colour than ordered,"Replacement raised, RMA shared with cx. Issue: wrong variant rcvd. Raised with warehouse.",DAMAGED_OR_WRONG_ITEM
+TK-246793,chat,"team,
+typo in the flat number, courier will nevver find it
+around Diwali se
+pulse 1
+pls reply",Cust contacted re address change request. Updated address with crr. Address updated.,DELIVERY_NOT_RECEIVED
+TK-251013,email,I haven't received my order,"reported: shipment not rcvd. checked awb w/ courier. courier conf dlvry for 13 mar, cx informed.",DELIVERY_NOT_RECEIVED
+TK-246251,chat,"Really frustrating. This is regarding Pulse 2. paid but package not delivered even after 9 days. I already called the courier. I want a replacement or refund, nothing else.",delivery delayed | checked awb with crr -> refund initiated as lost in transit //HAR,DELIVERY_NOT_RECEIVED
+TK-242294,chat,Bought my Strata 3 headphones around 02/05 from vireo.in.  Payment successful but order not delivered. I checked the tracking page daily. Nothing changed. Pathetic experience honestly. I want a replacement,Ticket raised for dlvry delayed. Checked AWB w/ crr. xfer to Logistics. rfnd initiated as lost in transit. (SOP 3.1),DELIVERY_NOT_RECEIVED
+TK-247332,chat,not what i expected from vireo. order vr896555 (pulse 2). i have been sitting at home for 3 days waiting for your courier. i already called courier. escalate this to someone senior.,New unit shipped under DOA. Issue: pickup missed. Checked pickup AWB. ~Pranav,DELIVERY_NOT_RECEIVED
+TK-243877,chat,"hi vireo support, bought the pulse 2 earbuds around july 23 from flipkart. return pickup has not happened. i rescheduled pickup twice. please resolve asap. thanks sneha mehta","1. Pickup missed
+2. Checked pickup AWB
+3. Full refund processed (2974) (SOP 5.4) [closed]",RETURN_PICKUP
+TK-245287,chat,"paid but package not delivered even after 9 days, VR907869","Not a billing issue - delivery query, transferring to logistics. Ticket raised for shipment not rcvd. Raised ticket with courier partner. xfer to Logistics. Refund initiated as lost in transit. Cx satisfied on chat. ~Imran",DELIVERY_NOT_RECEIVED
+TK-247813,email,"HI, ORDERED PULSE 2 BUDS LAST WEEK.  Distorted audio at high volume. Please resolve asap.",sorted,AUDIO_QUALITY
+TK-244177,chat,"hii
+not pairing w/ my phone
+nexa 2 VR908566
+urgent","cx reported device not discoverable. walked through forget + re-pair. reset done, paired ok. (sop 3.1)",CONNECTIVITY
+TK-251406,social,"Product: Pules earbuds
+Purchased: 21 Feb
+Issue: locked out of my own account since in February
+Tried: tried on another browser
+Expected: callback","otp not received | checked otp logs -> otp resent, cx logged in",ACCOUNT_LOGIN
+TK-249428,chat,i bought puse 1 on 10-12-2025. pairing is not working. need this sorted this week. thank you sai,"re: pairing failure | checked phone os version -> advised fw update via app, rslvd -SM",CONNECTIVITY
+TK-241252,chat,"helo
+there's a dent on the case straight out of the box
+my nexa fit band",customer reached out - damaged in transit. checked with courier for damage claim. replacement unit dispatched.,DAMAGED_OR_WRONG_ITEM
+TK-243845,email,"dear sir/madam,
+
+i am writing with reference to my order of strata 3 placed on 24 jul. the courier marked it delivered but nobody in my house got anything. i have checked with neighbours. i request you to process a refund to my original payment method.
+
+regards,
+meera patil","re: dlvry dellayed | raised ticket with courier partner -> refund approved, rs 630, 5-7 working days",DELIVERY_NOT_RECEIVED
+TK-252356,email,"hello ji
+i was promised a discount on the call, invoie sohws none
+my strata 3 headphones
+hello??","re: promo code invalid | checked coupon validity -> adv coupon terms, resolved //HAR",INVOICE_PRICE_COUPON
+TK-252416,chat,"Product: the AirLite bus
+Order: VR887708
+Purchased: April 08
+Issue: payment successful but order not delivered
+Tried: checked with neighbours
+Expected: replacement","Not a billing issue - dlvry query, transferring to logistics. Re-shipped from warehouse. Issue: order not delivered. conf address w/ cx. Via Logistics. (SOP 5.4) [closed]",DELIVERY_NOT_RECEIVED
+TK-240818,social,"change of mind, please stop the shipment, need this sorted this week","cx says cancel ord. cancelled before dispatch. xfer to logistics. already shipped, adv rto/return.",CANCELLATION
+TK-244451,chat,received the wrong item. VR890574,"cx states wrong item delivered. Verified order vs delivered item photos. rplc approved, reverse pickup arranged. Case closed w/ cx consent. ~Imran",DAMAGED_OR_WRONG_ITEM
+TK-250014,chat,"Dear Sir/Madam,
+I bought the mini speaker on 05/02. My bank says Rs 2499 went to you but your site says I have no orders.
+I checked bank statement.
+Please resolve asap","cx says payment debited, no ord. conf w/ payment gateway. ord manually created.",PAYMENT_FAILED_OR_DEBITED
+TK-248767,chat,really frustrating. i bougth the mini speaker on 16 dec. can i connect two the mini speaker together. fix this or i am posting on twitter.,re: pre-sales query | shared spec sheet -> query answered -SM,CONNECTIVITY
+TK-245703,email,"hello, orbit mini purchased 3 weeks back, order vr903666. the sound stutters whenever my phone is in my pocket. i reset both devices. nothing changed. honestly regretting this purchase. i want my money back. thanks & regards","cx reached out - BT dropouts. Checked FW 1.2.2. Advised, cx will monitor.",AUDIO_QUALITY
+TK-245844,chat,"Product: the Pulse buds
+Order: VR896664
+Purchased: 07 Oct
+Issue: payment wnet through but I got no order id
+Tried: tried logging out and in
+Expected: fix",amount deducted without ord | conf with payment gateway -> full refund processed (250) [closed],PAYMENT_FAILED_OR_DEBITED
+TK-245196,voice,"my dad has an old Nokia, will the watch app run","1. Pre-sales query
+2. Shared compatibility info
+3. Query answered //ZOY",PRODUCT_ENQUIRY
+TK-242350,email,"product: pulse2
+purchased: december 02
+issue: nobody came for the pickup
+tried: called courier
+expected: resolution",refund processed without pkp as goodwill [closed],RETURN_PICKUP
+TK-240624,social,really frustrating. order vr882586 (arc neckband). promo code shows invalid. i already tried on app and website. this is the last time i buy from you.,"1. discount not aplpied
+2. checked cart eligibility
+3. partial refund of discount amount issued",INVOICE_PRICE_COUPON
+TK-243240,chat,"Got my Pulse from Amazon 2 weeks ago. Nobody caem for the pickup. Need this sorted this week. THANKS, SIDDHARTH SHINDE",Cx says reverse pickup pending. Re-raised pickup with courier. Refund processed without pickup as goodwill.,RETURN_PICKUP
+TK-246948,chat,"Product: the Pulse 2 earbuds
+Order: VR882246
+Purchased: 12/10
+Issue: everything sounds like it is coming from one direcion now
+Tried: checked balance settings
+Expected: fix",Cust contacted re no audio one side. Asked cx to check bud in case. rplc raised.,AUDIO_QUALITY
+TK-253773,chat,"Hey,
+Bought orbit mini around May 13 from vireo.in. Is orbit mini compatible with my TV.
+Not what I expected from Vireo.
+Please advise.
+Thanks & regards Zoya",issue: product enquiry | shared compatibility info -> query answered -SM,PRODUCT_ENQUIRY
+TK-245769,chat,"Product: my Pulse 2
+Order: VR907993
+Purchased: 09 Aug
+Issue: it connects for a second and then vanishes from the device list
+Tried: tried on another phone
+Expected: refund","cx reported device not discoverable. checked phone os version. re-pair successful, resolved on chat.",CONNECTIVITY
+TK-247667,chat,"i have been a loyal customer & this is how you treat me. ordered pulse 2 3 weeks back. return pickup has not happened. i already called courier. i want a replacement or refund, nothing else.",cx: pkp not done | re-raised pkp w/ courier -> refund processed without pkp as goodwill [closed],RETURN_PICKUP
+TK-251260,voice,"[IVR transcript] very poor quality.  pulse2 purchased 10 days ago, order vr906238. package not delivered even after 15 days. i already called the courier. fix this or i am posting on twitter.",Re-shipped from warehouse. Issue: ord not delivered. chk AWB wih courier.,DELIVERY_NOT_RECEIVED
+TK-254106,chat,"Product: Pulse 2
+Order: VR895693
+Purchased: 25/05
+Issue: no update on my repair
+Tried: called service centre
+Expected: fix",resolved on call (sop 2.7) //AAD,HARDWARE_FAULT_WARRANTY
+TK-251119,email,this is regarding the neax 2. my copmany accounts team is askng for the tax bill. i checked orders page. nothing changed. i want a replacement.,Invoice emailed. Issue: GST invocie request. Updatted GSTIIN on order. (SOP 5.4),INVOICE_PRICE_COUPON
+TK-250945,chat,This is very disappointing.  Got pulse 2 buds frmo Amazon last week. not pairing with my phone. I alreeady restarted the phone. This is the last time I buy frrom you.,"re: device not discoverable | walked through forget + re-pair -> reset done, paired ok",CONNECTIVITY
+TK-250608,chat,"To the Vireo Cstomer Care Team,
+
+I am writing wih reference to my order of Pulse2 (VR897974) placed on 14 Feb. Waant to cancel my order. I have tried cancel button, greyed out. I request you to provide a resoltuion within 3 workng days.
+
+Yours faithfully,
+Rajat Sandhu
+Visakhapatnam","Already shipped, adv RTO/return. Issue: cancel order. Cancelled before dispatch. //SNE",CANCELLATION
+TK-245870,chat,"helo
+refund not received yet
+nexa watch","1. Refund pending
+2. chk refund status on PG
+3. Refund approved, Rs 4499, 5-7 working days [closed]",REFUND_STATUS
+TK-242233,chat,"paid via UPI, amount deducted, no order confirmation, can someone fix this?",resolved on call //HAR,PAYMENT_FAILED_OR_DEBITED
+TK-253176,chat,"To the Vireo Customer Care Team,
+
+I am writing with reference to my order of Pulse2 placed on March 21.  Works for music but useless for meetings. I have checked mic permissions. I request you to provide a resolution within 3 working days.
+
+Yours faithfully,
+Ritika Shinde
+Noida","cx reached out - low mic pkp. Tested on call w/ cx. Permissions fixed, resolved.",CONNECTIVITY
+TK-247673,email,will this survive a shower. waiting for yuor reply,"1. pre-sales query
+2. shared compatibility info
+3. query answwered",PRODUCT_ENQUIRY
+TK-246000,voice,I have been a looyal customer & this is how u treat me.  Got airlite earbuds from Amazon lats month. teh charging case is not charging. I already tride wireless charging pad. Fix this or I am posting on twitter.,Ticket raised for charging case dead. Confirmed cse LED dead. New unit shipped under DOA. ~Meera,HARDWARE_FAULT_WARRANTY
+TK-245607,email,"Dear Sir/Madam, I bought Strata 3 on September 20. My order has not been delivered yet. I called the courier. Nothing changed. Kindly look into it. Regards,",- (SOP 2.7),DELIVERY_NOT_RECEIVED
+TK-253424,chat,Really frustrating. I bought Pulse2 on December 14. can't get past the loading screen in the app. I already updaed phone. Refund. Now,Customer states app crashing. Checked app version. Replacement unit dispatched.,APP_FIRMWARE
+TK-251786,social,"BHAI
+THE FESTIVE OFFER VANISHED WHEN I CLICKED PAY
+BAHUT PARESHAN HU",discount not applied | checked coupon validity -> full refud porcessed (6174) | xfer returns desk,INVOICE_PRICE_COUPON
+TK-247799,voice,[IVR transcript] locked out of my own account since 2 weeks ago. i want my money back,"1. Unable to log in
+2. chk number on account
+3. Account unlocked -NP",ACCOUNT_LOGIN
+TK-248825,email,"HELLO
+PIICKUP SCHEDULED BUT NO ONE SHOWED UP",issue: reverse pickup pending | chk pickup awb -> pickup rescheduled for 01 jan,RETURN_PICKUP
+TK-240305,email,"hello vireo, this is regarding the orbit smart speaker. i sent the unit in 21 days ago and have heard nothing. i called servce centre. nothing changed. i want my money back. thanks & regards sai kulkarni","Ticket raised for repair status follow-up. Checked QC report. Cx updated, ETA shared. ~Meera",HARDWARE_FAULT_WARRANTY
+TK-252342,email,"product: the pulse 2 earbuds
+order: vr908695
+purchased: 12 feb
+issue: since the lsat update the app just shows a white screen
+tried: cleared cache
+expected: replacement","re: app crashing | asked for phone model + os -> cleared cache, resolved",APP_FIRMWARE
+TK-242940,chat,"hello
+promo code shows invalid
+help","advised coupon terms, rslvd. issue: coupon not applied. checked cart eligibility. ~Megha",INVOICE_PRICE_COUPON
+TK-253673,voice,"please cancel, ordered by mistake, VR885826","re: cancel ord | checked shipment status -> already shipped, advised rto/return -SS",CANCELLATION
+TK-242557,email,"hello
+want to cancel my order
+??","rfnd approved, Rs 1260, 5-7 working days. Issue: cancel ord. chk shipment status.",CANCELLATION
+TK-240991,email,"hii
+my order has not been delivered yet
+anyone there","Not a billing issue - dlvry query, transferring to logistics. Ticket raised for dlvry delayed. Raised ticket w/ courier partner. Transferred to Logistics. Refund initiated as lost in transit. Closing. (SOP 2.7) ~Imran",DELIVERY_NOT_RECEIVED
+TK-241929,voice,"[IVR transcript] sir ji change of mind, please stop teh shipment itna paisa diya hai the strata 3 anyone there","1. Order cancellation
+2. Cancelled before dispatch
+3. Already shipped, advised RTO/return",CANCELLATION
+TK-252790,chat,"hii
+it connects for a second and then vanishes from teh device list
+pls reply","Customer reached out - pairing failure. Asked cx to reset the device. Re-pair successful, resolved on chat.",CONNECTIVITY
+TK-246279,voice,"[IVR transcript] teh app said pickup today, that was on 13 Oct",reverse pickup pending | checked pickup awb -> pickup rescheduled for 27 oct ~Pranav,RETURN_PICKUP
+TK-244166,chat,"STUCK ON THE CONNECTING SCREEN FOREVER, VR894459, PLEASE RESOLVE ASAP","1. wifi setup failing
+2. checked router band
+3. adv router settings -SS",CONNECTIVITY
+TK-252354,email,"Hello Vireo, Ordered my Strata 2 headphones 2 weeks ago. The app closes itself the moment I tap on my device. I updated phone. Kindly look into it. Thanks & regards, Joseph Trivedi","ticket raised for app crashing. known issue on android 14 - bug logged. bug logged, workaround shared. follow-up not required.",APP_FIRMWARE
+TK-243068,chat,"Dear team, Ordered pule 1 a month ago. App not opening after update. I cleared cache. Please resolve asap","Customer states app not opening. Known issue on Android 15 - bug logged. Advised beta build, resolved. Cx informed. -VG",APP_FIRMWARE
+TK-242547,social,"Hi, the mini speaker purchased a month ago, order VR888369. Refund was promised 9 days ago & nothing. I checked bank. Please advise.","issue: refund delay | checked refund status on pg -> refund approved, rs 500, 5-7 working days ~Pranav",REFUND_STATUS
+TK-247811,email,"to the vireo customer care team,
+
+i am writing with reference to my order of braided cable placed on 27/11. it has been 13 days and i have nothing in hand. i have called the courier. i request you to process a refund to my original payment method.
+
+regards,
+ishaan gupta",cx: order not delivered | confirmed address with cx -> refund initiated as lost in transit | xfer billing //HAR,DELIVERY_NOT_RECEIVED
+TK-254078,chat,"Product: the Pulse bus
+Order: VR899454
+Purchased: June 02
+Issue: the payment wnet through on the first try, the order has not gone through my front door yet
+Tried: checked the tracking page daily
+Expected: resolution",issue: order not delivered | checked awb with courier -> refund initiated as lost in transit | xfer logistics,DELIVERY_NOT_RECEIVED
+TK-250289,email,"Hello Vireo,
+Got Pulse2 from Flipkart 3 weeks back.  I haven't received my order.
+I checked the tracking page daily.
+I want my money back.
+Regards Imran","Cx says order not delivered. Raised ticket with courier partner. Courier confirmed delivery for 18 Feb, cx informed. Cx informed. ~Imran",DELIVERY_NOT_RECEIVED
+TK-240328,chat,"I have been a loyal customer and this is how you treat me. I bought airlite earbuds on 04/01. please cancel, ordered by mistake. I already tried cancel button, greyed out. Esalate this to someone senior.","Ticket raised for order cancellation. chk shipment status. xfer to Logistics. Cancelled, rfnd initiated. (SOP 5.4)",CANCELLATION
+TK-254487,chat,"Pathetic experience honestly. I bought Arc neckband on 13/06. paid, confirmed, then nothing. 5 days and counting. I already checked the tracking page daily. Fix this or I am posting on twitter.","Cx says order not delivered. Raised ticket with courier partner. Transferred to Logistics. RTO confirmed, reshipped. [closed]",DELIVERY_NOT_RECEIVED
+TK-248225,chat,"Ordered my Pulse 2 a month ago. Money gone from account, item not with me, 15 days. I called the courier. Nothing changed. I want my money back. Thanks, Rohit Shah","payment ok. shipment issue. -> logistics Ticket raised for delivery delayed. Checked AWB w/ courier. Transferred to Logistics. Courier conf delivery for 16 Dec, cx informed. Closing. (SOP 3.1) ~Imran",DELIVERY_NOT_RECEIVED
+TK-241630,chat,"Hi, I bought Strata 3 on February 27. Package not delivered even after 7 days. I called the courier. Nothing changed. Waiting for your reply.",contact re shipment not rcvd. chk awb w/ courier. re-shipped from warehouse.,DELIVERY_NOT_RECEIVED
+TK-244694,chat,"Hi there, Got my Nexa 2 watch from vireo.in around Diwali. Nobody came for the pickup. I rescheduled pickup twice. Nothing changed. Waiitng for your reply.","Cx reported pkp missed. Checked pkp AWB. pkp done, refund initiated. Follow-up not required. ~Imran",RETURN_PICKUP
+TK-250471,chat,i am losing patience. bought my pulse 2 around january 07 from flipkart. my phone just doesn't see it in the list anymore. i already restarted the phone. refund. now,"re: device not discoverable | walked through forget + re-pair -> advised fw update via app, rslvd",CONNECTIVITY
+TK-244459,voice,[IVR transcript] nobody cmae for the pickup,"1. Pickup missed
+2. Re-raised pickup with courier
+3. Refund approved, Rs 5399, 5-7 working days",RETURN_PICKUP
+TK-253216,chat,"PRODUCT: PULSE 2 BUDS
+PURCHASED: 26/02
+ISSUE: CONNECTION DROPS CONSTANTLY
+TRIED: RESET BOTH DEVICES
+EXPECTED: RESOLUTION","1. BT dropouts
+2. chk FW 2.1.3
+3. FW update rslvd",CONNECTIVITY
+TK-244092,chat,"hello vireo,
+i bought pulse 2 buds on august 07. promo code shows invalid.
+i tried on app and website. nothing changed.
+i want a replacement.
+please revert sukhwinder",Reported: coupon not applied. Cecked copuon validity. Store credit issued. Wll monitor. (SOP 4.2),INVOICE_PRICE_COUPON
+TK-248746,chat,Pathetic experience honestly. Got Pulse 2 from Amazon recently. the left earbud is not charging at all. I already tried a different cable. Escalate this to sommeone senior.,cx: l bud no charge in case | tested with cx on call -> new unit shipped under doa -SM,CHARGING_BATTERY
+TK-244331,email,"hii
+please share invoice with gst number
+the gan charger",cx: invoice query | regenerated invoice -> gst invoice regenerated and shared ~Megha,INVOICE_PRICE_COUPON
+TK-244081,chat,"to the vireo customer care team,
+
+i am writing with reefrence to my order of airlite placed on 21/07. dies by lunchtime with light use. i have trned off always-on display. i request you to provide a resolution within 3 working days.
+
+sincerely,
+sukhwinder reddy",re: battery draining fast | checked usage pattern with cx -> escalated to wty,CHARGING_BATTERY

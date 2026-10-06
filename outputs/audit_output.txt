@@ -1,0 +1,334 @@
+
+================================================================
+1. SHAPES, DATE PARSING, MISSING VALUES
+================================================================
+tickets: 11,780 rows, 21 columns
+agents: 44 rows, 8 columns
+orders: 15,000 rows, 8 columns
+customers: 9,500 rows, 6 columns
+products: 14 rows, 7 columns
+
+Date parsing (tickets):
+  created_at: 0 unparseable non-blank values
+  first_response_at: 0 unparseable non-blank values
+  resolved_at: 0 unparseable non-blank values
+
+Missing values in tickets (all columns):
+                    missing   pct
+ticket_id                 0   0.0
+created_at                0   0.0
+first_response_at         0   0.0
+resolved_at             583   4.9
+status                    0   0.0
+channel                   0   0.0
+customer_id               0   0.0
+order_id               4017  34.1
+product_sku               0   0.0
+category                  0   0.0
+priority                  0   0.0
+assigned_team             0   0.0
+agent_id                  0   0.0
+transfers              4052  34.4
+csat_score             6435  54.6
+refund_amount_inr      9886  83.9
+refund_reason_code     9886  83.9
+replacement_issued        0   0.0
+customer_message          0   0.0
+agent_notes               0   0.0
+source_system             0   0.0
+
+================================================================
+2. DUPLICATES (H1)
+================================================================
+Repeated ticket_id rows: 0
+Fully identical rows:    0
+
+================================================================
+3. VOLUMES (raw vs de-duplicated) - checking Priya's 22% / 16%
+================================================================
+Raw rows: 11,780 | unique ticket_ids: 11,780
+Date range: 2024-06-20 01:36:00 -> 2026-06-30 23:22:00
+
+Category share % (raw vs de-duplicated):
+                     raw_%  dedup_%  dedup_n
+category                                    
+Billing & Payments    21.8     21.8     2564
+Delivery & Shipping   16.2     16.2     1905
+Other                 13.8     13.8     1622
+Returns & Refunds      8.9      8.9     1049
+Connectivity           8.5      8.5     1002
+Charging & Battery     7.0      7.0      820
+App & Firmware         5.9      5.9      699
+Product Enquiry        5.2      5.2      612
+Audio Quality          5.0      5.0      591
+Warranty & Repair      4.5      4.5      525
+Account & Login        3.3      3.3      391
+
+Assigned-team share % (raw vs de-duplicated):
+                        raw_%  dedup_%  dedup_n
+assigned_team                                  
+Chat Frontline           25.7     25.7     3030
+Billing                  21.8     21.8     2564
+Logistics                16.2     16.2     1905
+Email Frontline          15.3     15.3     1807
+Returns Desk              8.9      8.9     1049
+Voice Frontline           7.6      7.6      900
+Escalations & Warranty    4.5      4.5      525
+
+Tickets per month (raw), by source_system:
+source_system  helpdesk  legacy_fd    All
+month                                    
+2024-06               0          3      3
+2024-07               0         13     13
+2024-08               0         14     14
+2024-09               0         26     26
+2024-10               0         26     26
+2024-11               0         25     25
+2024-12               0         32     32
+2025-01               0        314    314
+2025-02               0        368    368
+2025-03               0        462    462
+2025-04               0        449    449
+2025-05               0        424    424
+2025-06               0        439    439
+2025-07               0        462    462
+2025-08               0        695    695
+2025-09             371        300    671
+2025-10             847          0    847
+2025-11             952          0    952
+2025-12             869          0    869
+2026-01             812          0    812
+2026-02             733          0    733
+2026-03             780          0    780
+2026-04             832          0    832
+2026-05             756          0    756
+2026-06             776          0    776
+All                7728       4052  11780
+
+================================================================
+4. TIMESTAMP CHECK (H2) - minutes, by source_system
+================================================================
+created -> resolved (status=resolved only):
+                count    mean     std    min     1%     5%    25%    50%     75%     95%      max
+source_system                                                                                    
+helpdesk       6645.0  1557.0  2975.0    7.0   12.0   18.0   36.0  122.0  1643.0  7287.0  23267.0
+legacy_fd      3483.0  1273.0  3000.0 -324.0 -318.0 -312.0 -293.0 -202.0  1490.0  6939.0  23116.0
+
+created -> first response (all rows):
+                count  mean    std  min   1%   5%  25%   50%    75%    95%     max
+source_system                                                                     
+helpdesk       7728.0  96.0  191.0  0.0  0.0  1.0  5.0  26.0  107.0  419.0  5390.0
+legacy_fd      4052.0  93.0  182.0  0.0  0.0  1.0  5.0  27.0  101.0  395.0  2651.0
+
+Negative resolve times by source_system:
+source_system
+helpdesk        0
+legacy_fd    2379
+Name: resolve_mins, dtype: int64
+
+Resolved before first response, by source_system:
+source_system
+helpdesk        0
+legacy_fd    2575
+dtype: int64
+
+================================================================
+5. REFUND SCALE (H3) - by source_system
+================================================================
+Non-blank refund values that could not convert to a number: 0
+               count  median    mean      max
+source_system                                
+helpdesk        1238  2499.0  2701.5  12998.0
+legacy_fd        656  2249.0  3030.9  13998.0
+
+Median refund by source_system and reason code:
+source_system       helpdesk  legacy_fd
+refund_reason_code                     
+CANCEL                2499.0     2499.0
+DOA-REPL              2799.0     2186.0
+DUP-PAYMENT           2124.0     1999.0
+GW-OTHER              2548.0     1104.0
+LOST-TRANSIT          2499.0     1999.0
+PRICE-ADJ             2799.0     3150.0
+RETURN-QC-OK          2499.0     2448.0
+WTY-BUYBACK           3412.0     2249.0
+
+================================================================
+6. TRANSFERS (blank vs zero), by source_system
+================================================================
+Non-blank count:
+source_system
+helpdesk     7728
+legacy_fd       0
+Name: transfers, dtype: int64
+
+Value counts (helpdesk only):
+transfers
+0.0    6638
+1.0     881
+2.0     209
+Name: count, dtype: int64
+
+================================================================
+7. OTHER DISTRIBUTIONS
+================================================================
+
+status:
+status
+resolved    10128
+closed       1069
+open          336
+pending       247
+Name: count, dtype: int64
+
+channel:
+channel
+chat      5387
+email     3555
+voice     1702
+social    1136
+Name: count, dtype: int64
+
+priority:
+priority
+Normal    8017
+High      2549
+Low       1214
+Name: count, dtype: int64
+
+refund_reason_code:
+refund_reason_code
+NaN             9886
+RETURN-QC-OK     663
+DUP-PAYMENT      498
+CANCEL           303
+LOST-TRANSIT     161
+DOA-REPL         108
+PRICE-ADJ         81
+WTY-BUYBACK       45
+GW-OTHER          35
+Name: count, dtype: int64
+
+replacement_issued:
+replacement_issued
+N    10678
+Y     1102
+Name: count, dtype: int64
+
+csat_score:
+csat_score
+NaN    6435
+3.0    1839
+4.0    1764
+2.0     827
+5.0     724
+1.0     191
+Name: count, dtype: int64
+
+Tickets with blank order_id: 34.1%
+
+================================================================
+8. ROSTER (agents.csv)
+================================================================
+Rows: 44 | unique agent_id: 44
+Agents with more than 1 roster row: 0
+Display names shared by different agent_ids:
+name
+Om Sharma    2
+Name: agent_id, dtype: int64
+Open-ended assignments (blank to_date): 44
+
+Roster rows by team and tier:
+team                    tier
+Billing                 1        4
+Chat Frontline          1       15
+Email Frontline         1        7
+Escalations & Warranty  2        6
+Logistics               1        5
+Returns Desk            1        3
+Voice Frontline         1        4
+dtype: int64
+
+================================================================
+9. LOT CODES (H8) - tickets per lot (rows with a matched order only)
+================================================================
+Tickets matched to an order: 7,763 of 11,780
+Top 10 lot_codes by ticket count:
+lot_code
+PL2-2507-2    78
+PL2-2507-1    78
+PL2-2511-4    71
+PL2-2509-3    69
+PL2-2508-2    69
+PL2-2506-2    67
+PL2-2508-1    67
+PL2-2509-1    63
+PL2-2509-4    62
+PL2-2510-1    62
+Name: count, dtype: int64
+
+Lot summary: 1267 lots, median 8 orders per lot
+
+================================================================
+10. FREE-TEXT SAMPLES (15 random) - tag is the BOT's guess, not truth
+================================================================
+
+#TK-248362 | bot tag: Account & Login | first routed: Email Frontline | email | helpdesk
+  Customer: Dear team, This is regarding Pulse 2. Locked out of my own account since around Diwali. I tried on another browser. I want my money back.
+  Agent:    cx says login issue. checked number on account. number updated, resolved.
+
+#TK-245112 | bot tag: Billing & Payments | first routed: Billing | chat | helpdesk
+  Customer: Product: the Pulse 2 earbuds Order: VR887711 Purchased: 07/09 Issue: payment page said success. my doorstep says otherwise Tried: checked with neighbours Expected: callback
+  Agent:    payment ok. shipment issue. -> logistics Courier confirmed dlvry for 16 Sep, cx informed. Issue: order not delivered. Raised ticket with courier partner. Via Logistics. (SOP 4.2) [closed]
+
+#TK-246000 | bot tag: Warranty & Repair | first routed: Escalations & Warranty | voice | helpdesk
+  Customer: I have been a looyal customer & this is how u treat me.  Got airlite earbuds from Amazon lats month. teh charging case is not charging. I already tride wireless charging pad. Fix this or I am posting 
+  Agent:    Ticket raised for charging case dead. Confirmed cse LED dead. New unit shipped under DOA. ~Meera
+
+#TK-250227 | bot tag: Connectivity | first routed: Chat Frontline | social | helpdesk
+  Customer: Really frustrating. This is regarding Orbit speaker. bluetooth pairing fails evvery time. I already restarted the phone. Fix this or I am posting on twitter.
+  Agent:    cx says pairing failure. asked cx to reset the device. advised fw update via app, resolved.
+
+#TK-243559 | bot tag: Delivery & Shipping | first routed: Logistics | voice | legacy_fd
+  Customer: [IVR transcript] hello received damaged product orbit mini
+  Agent:    rplc raised, rma shared w/ cx. issue: transit damage. checked w/ crr for damage claim.
+
+#TK-241837 | bot tag: Billing & Payments | first routed: Billing | chat | legacy_fd
+  Customer: hi payment was deducted but no order was created teh neckband vr905885 anyone there
+  Agent:    ord manually created. issue: payment debited, no ord. conf w/ payment gateway. ~Megha
+
+#TK-245724 | bot tag: Returns & Refunds | first routed: Returns Desk | chat | helpdesk
+  Customer: Dear Sir/Madam,  I am writing with reference to my order of pulse 2 buds (VR886003) placed on 07/09. PACKED THE BOX A WEEK AGO AND IT'S STILL HERE. I have called courier. I request you to kindly arran
+  Agent:    reverse pickup pending | checked pickup awb -> pickup rescheduled for 08 oct ~Pranav
+
+#TK-243774 | bot tag: Other | first routed: Email Frontline | email | legacy_fd
+  Customer: Namaste, This is regarding Pulse2. Will this survive a shower. Please call me on my registered number. Awaiting response, Imran Gupta
+  Agent:    cx reached out - compatibility query. Shared spec sheet. Cx satisfied. Cx informed. (SOP 5.4) -VG
+
+#TK-248256 | bot tag: Returns & Refunds | first routed: Returns Desk | chat | helpdesk
+  Customer: product: pulse 2 buds order: vr896118 purchased: 16-11-2025 issue: still waiting for my refund tried: checked bank expected: fix
+  Agent:    refund pending | chk refund status on pg -> full refund processed (3499)
+
+#TK-241328 | bot tag: Delivery & Shipping | first routed: Logistics | chat | legacy_fd
+  Customer: Hi team, Got Orbit Mini from vireo.in recently. My order has not been delivered yet. I called the courier. Nothing changed. Please resolve asap. Rgds
+  Agent:    1. Shipment not received 2. Cecked AWB with crr 3. crr conf delivery for 22 Mar, cx inormed
+
+#TK-250776 | bot tag: Returns & Refunds | first routed: Returns Desk | email | helpdesk
+  Customer: Dear team, Ordered Pulse 2 around Diwali. You picked up the item 12 days ago and my money hasn't come back. Waiting for your reply. Regards,
+  Agent:    1. Refund not credited 2. chk refund status on PG 3. Refund of Rs 332 initiated to source [closed]
+
+#TK-253503 | bot tag: Charging & Battery | first routed: Voice Frontline | voice | helpdesk
+  Customer: [IVR transcript] case wont charge since in January
+  Agent:    1. Case no LED / no charge 2. conf case LED dead 3. esc to wty -NP
+
+#TK-244587 | bot tag: Returns & Refunds | first routed: Returns Desk | chat | legacy_fd
+  Customer: Not what I expected from Vireo. This is regarding pulse 2 buds. refund not received yet. I already checked bank. Refund. Now.
+  Agent:    1. Refund pending 2. Checked refund status on PG 3. Refunded Rs 2974 ~Pranav
+
+#TK-245084 | bot tag: Other | first routed: Chat Frontline | chat | helpdesk
+  Customer: to the virreo customer care team,  i am wriing with reference to my order of pulse 2 buds placed on september 19.  before i buy - will this talk to a 2019 samsung. i request u to kindly arrange a repl
+  Agent:    compatibility query | shared spec sheet -> cx satisfied
+
+#TK-245620 | bot tag: Billing & Payments | first routed: Billing | chat | helpdesk
+  Customer: the return was accepted but the amount is nowhere in my account, waiting for your reply
+  Agent:    issue: refund not credited | chk refund status on pg -> refund of rs 3250 initiated to source //HAR

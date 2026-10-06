@@ -1,0 +1,23 @@
+,team,shift,site,headcount
+0,Billing,Day,Bengaluru,1
+1,Billing,Morning,Bengaluru,1
+2,Billing,Morning,Indore,2
+3,Chat Frontline,Day,Bengaluru,3
+4,Chat Frontline,Morning,Bengaluru,7
+5,Chat Frontline,Morning,Indore,2
+6,Chat Frontline,Night,Indore,3
+7,Email Frontline,Day,Bengaluru,1
+8,Email Frontline,Morning,Bengaluru,1
+9,Email Frontline,Morning,Indore,3
+10,Email Frontline,Night,Indore,2
+11,Escalations & Warranty,Day,Indore,1
+12,Escalations & Warranty,Morning,Bengaluru,1
+13,Escalations & Warranty,Morning,Indore,4
+14,Logistics,Day,Bengaluru,2
+15,Logistics,Morning,Bengaluru,3
+16,Returns Desk,Day,Bengaluru,1
+17,Returns Desk,Morning,Bengaluru,1
+18,Returns Desk,Morning,Indore,1
+19,Voice Frontline,Day,Bengaluru,2
+20,Voice Frontline,Day,Indore,1
+21,Voice Frontline,Morning,Bengaluru,1
